@@ -6,4 +6,5 @@ import semicolon.africa.librarymanagement.models.Publisher;
 
 @Repository
 public interface PublisherJpa extends MongoRepository<Publisher, String> {
+    Publisher findByName(String name);
 }

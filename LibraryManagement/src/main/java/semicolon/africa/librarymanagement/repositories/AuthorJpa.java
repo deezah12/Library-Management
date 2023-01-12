@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import semicolon.africa.librarymanagement.models.Author;
 @Repository
 public interface AuthorJpa extends MongoRepository<Author, String> {
-
+Author findByName(String name);
 
 }
