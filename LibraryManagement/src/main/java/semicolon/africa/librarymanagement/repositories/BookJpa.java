@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 import semicolon.africa.librarymanagement.models.Book;
 @Repository
 public interface BookJpa extends MongoRepository<Book, String> {
+    Book findByTitle(String title);
 }

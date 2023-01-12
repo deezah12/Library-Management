@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import semicolon.africa.librarymanagement.models.Category;
 @Repository
 public interface CategoryJpa extends MongoRepository<Category, String> {
-
+    Category findByName(String name);
 }
